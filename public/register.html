@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="nav">
+        Home | <a href="login.html">Đăng nhập</a> | <b>Đăng ký</b>
+    </div>
+
+    <div class="register-box">
+        <h2>Màn hình đăng ký</h2>
+        <form onsubmit="return validateRegisterForm()">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password">
+
+            <label for="repassword">Nhập lại mật khẩu</label>
+            <input type="password" id="repassword" name="repassword">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <div class="actions">
+                <a href="login.html" class="forgot">Đã có tài khoản</a>
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
